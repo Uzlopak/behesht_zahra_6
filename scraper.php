@@ -100,7 +100,7 @@ function validateEntry($id){
 	try {
 	$recordSet = scraperwiki::select("* from data where id ='". $id . "'");
 	if (!empty($recordSet[0]['id'])) {
-		if ($recordSet[0]['firstname'] != "" and $recordSet[0]['surname'] != ""){
+		if ($recordSet[0]['surname'] != ""){
 			$result = true;	
 		}
 	} 
