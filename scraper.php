@@ -31,6 +31,8 @@ require 'scraperwiki.php';
 $endtime = time() + (60*60) * 23; //23h 
 
 for ($id = 1500001; $id <= 1700000; $id++) {
+	if ($id != 1576683)
+	{
 	if ($endtime <= time())
 	{
 		exit;
@@ -61,6 +63,7 @@ for ($id = 1500001; $id <= 1700000; $id++) {
 	    $i++;
 	  }
 	  print "!";
+	  }
   }
 }
 function ripById($id){
